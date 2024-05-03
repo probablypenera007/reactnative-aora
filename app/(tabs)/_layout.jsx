@@ -1,8 +1,7 @@
-import { View, Text } from 'react-native'
-import {Tabs, Redirect} from 'expo-router'
+import { Image, View, Text } from "react-native";
+import { Tabs, Redirect } from "expo-router";
 
-import { icons } from "../constants";
-
+import { icons } from "../../constants";
 
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
@@ -23,29 +22,29 @@ const TabIcon = ({ icon, color, name, focused }) => {
   );
 };
 
-
 const TabsLayout = () => {
   return (
     <>
-    <Tabs>
-    <Tabs.Screen
-          name="create"
+      <Tabs>
+        <Tabs.Screen
+          name="home"
           options={{
-            title: "Create",
+            title: "Home",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.plus}
+                icon={icons.home}
                 color={color}
-                name="Create"
+                name="Home"
                 focused={focused}
               />
             ),
           }}
-        />      
-    </Tabs>
+        />
+        r
+      </Tabs>
     </>
-  )
-}
+  );
+};
 
-export default TabsLayout
+export default TabsLayout;
