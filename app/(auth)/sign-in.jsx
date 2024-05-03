@@ -6,15 +6,17 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 import { images } from "../../constants";
 import { CustomButton } from "../../components/CustomButton";
 import { FormField } from "../../components/FormField";
+import { useGlobalContext } from "../../context/GlobalProvider";
+
 
 const signIn = () => {
-  const { setUser, setIsLogged } = useGlobalContext();
+  // const { setUser, setIsLogged } = useGlobalContext();
   const [isSubmitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
-  
+
   return (
     <SafeAreaView className="bg-primary h-full">
     <ScrollView>
