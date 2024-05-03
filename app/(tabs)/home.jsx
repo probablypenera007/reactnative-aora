@@ -4,7 +4,7 @@ import { FlatList, Image, RefreshControl, Text, View } from "react-native";
 
 import { images } from "../../constants";
 import useAppwrite from "../../lib/useAppwrite";
-import { getAllPosts, getLatestPosts } from "../../lib/appwrite";
+import { getAllPosts, getCurrentUser, getLatestPosts } from "../../lib/appwrite";
 import { EmptyState, SearchInput, Trending, VideoCard } from "../../components";
 
 const Home = () => {
@@ -19,6 +19,7 @@ const Home = () => {
     setRefreshing(false);
   };
 
+  const currentUser = getCurrentUser();
   // one flatlist
   // with list header
   // and horizontal flatlist
@@ -47,7 +48,7 @@ const Home = () => {
                   Welcome Back
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  JSMastery
+                  {/* {currentUser || "User"} */}
                 </Text>
               </View>
 
