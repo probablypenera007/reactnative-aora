@@ -2,7 +2,7 @@
 import { Stack, Redirect } from "expo-router"
 import { StatusBar } from "expo-status-bar";
 
-import { Loader } from "app/components/loader";
+import { Loader } from "../../components/Loader";
 
 const AuthLayout = () => {
   return (
@@ -22,7 +22,7 @@ const AuthLayout = () => {
         />
       </Stack>
 
-      <Loader isLoading={loading} />
+      {/* <Loader isLoading={loading} /> */}
       <StatusBar backgroundColor="#161622" style="light" />
    </>
   )
