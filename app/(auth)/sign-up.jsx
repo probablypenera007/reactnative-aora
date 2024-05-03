@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const sign-up = () => {
+const signUp = () => {
   return (
     <View>
       <Text>sign-up</Text>
@@ -9,4 +9,4 @@ const sign-up = () => {
   )
 }
 
-export default sign-up
+export default signUp
