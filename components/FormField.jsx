@@ -1,5 +1,8 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { useState } from "react";
+import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
+
+import { icons } from "../constants";
+
 
 const FormField = ({
     title,
