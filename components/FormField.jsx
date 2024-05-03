@@ -13,8 +13,8 @@ const FormField = ({
     ...props
 }) => {
   return (
-    <View>
-      <Text>FormField</Text>
+    <View className={`space-y-2 ${otherStyles}`}>
+          <Text className="text-base text-gray-100 font-pmedium">{title}</Text>
     </View>
   )
 }
