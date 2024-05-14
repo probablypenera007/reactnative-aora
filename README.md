@@ -1,24 +1,31 @@
 # Aora
 
-Aora is a video-sharing app similar to TikTok where users can upload videos and interact with one another. This application is built using React Native and Appwrite for the backend.
+Aora is a video-sharing app similar to TikTok where users can upload videos and interact with one another. This application is built using React Native, Expo, and Appwrite for the backend.
 
 ## Screenshots
 
-
-### Sign Up
-<img src="./assets/aora-signup.png" alt="Sign Up" width="200"/>
-
-### Log In
-<img src="./assets/aora-login.png" alt="Log In" width="200"/>
-
-### Profile
-<img src="./assets/aora-profile.png" alt="Profile" width="200"/>
-
-### Upload Video
-<img src="./assets/aora-video.png" alt="Upload Video" width="200"/>
-
-### Home
-<img src="./assets/aora-home.png" alt="Home" width="200"/>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+  <div style="margin: 10px; text-align: center;">
+    <h3>Sign Up</h3>
+    <img src="./assets/aora-signup.png" alt="Sign Up" width="200"/>
+  </div>
+  <div style="margin: 10px; text-align: center;">
+    <h3>Log In</h3>
+    <img src="./assets/aora-login.png" alt="Log In" width="200"/>
+  </div>
+  <div style="margin: 10px; text-align: center;">
+    <h3>Profile</h3>
+    <img src="./assets/aora-profile.png" alt="Profile" width="200"/>
+  </div>
+  <div style="margin: 10px; text-align: center;">
+    <h3>Upload Video</h3>
+    <img src="./assets/aora-video.png" alt="Upload Video" width="200"/>
+  </div>
+  <div style="margin: 10px; text-align: center;">
+    <h3>Home</h3>
+    <img src="./assets/aora-home.png" alt="Home" width="200"/>
+  </div>
+</div>
 
 
 
