@@ -4,20 +4,21 @@ Aora is a video-sharing app similar to TikTok where users can upload videos and 
 
 ## Screenshots
 
+
 ### Sign Up
-![Sign Up](./assets/aora-signup.png)
+<img src="./assets/aora-signup.png" alt="Sign Up" width="200"/>
 
 ### Log In
-![Log In](./assets/aora-login.png)
+<img src="./assets/aora-login.png" alt="Log In" width="200"/>
 
 ### Profile
-![Profile](./assets/aora-profile.png)
+<img src="./assets/aora-profile.png" alt="Profile" width="200"/>
 
 ### Upload Video
-![Upload Video](./assets/aora-video.png)
+<img src="./assets/aora-upload.png" alt="Upload Video" width="200"/>
 
 ### Home
-![Home](./assets/aora-video.png)
+<img src="./assets/aora-home.png" alt="Home" width="200"/>
 
 
 
