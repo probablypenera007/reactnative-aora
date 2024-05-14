@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { FlatList, Image, RefreshControl, Text, View } from "react-native";
 
@@ -12,6 +12,7 @@ const Home = () => {
   const { data: latestPosts } = useAppwrite(getLatestPosts);
 
   const [refreshing, setRefreshing] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
 
   const onRefresh = async () => {
     setRefreshing(true);
@@ -19,12 +20,16 @@ const Home = () => {
     setRefreshing(false);
   };
 
-  const currentUser = getCurrentUser();
-  // one flatlist
-  // with list header
-  // and horizontal flatlist
+  useEffect(() => {
+    const fetchCurrentUser = async () => {
+      const user = await getCurrentUser();
+      setCurrentUser(user);
+    };
 
-  //  we cannot do that with just scrollview as there's both horizontal and vertical scroll (two flat lists, within trending)
+    fetchCurrentUser();
+  }, []);
+
+  const getName = () => currentUser?.username || "...Loading";
 
   return (
     <SafeAreaView className="bg-primary">
@@ -45,10 +50,10 @@ const Home = () => {
             <View className="flex justify-between items-start flex-row mb-6">
               <View>
                 <Text className="font-pmedium text-sm text-gray-100">
-                  Welcome Back
+                  Welcome Back 
                 </Text>
                 <Text className="text-2xl font-psemibold text-white">
-                  {/* {currentUser || "User"} */}
+                {getName()}
                 </Text>
               </View>
 
